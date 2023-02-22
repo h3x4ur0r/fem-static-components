@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 15px 15px 32px 5px hsla(241, 100%, 89%, 0.4);
+    border-radius: 2rem;
+}
+
+.left {
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: hsl(241, 100%, 89%);
+    flex: 50%;
+    text-align: center;
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.left_heading, .right_heading {
+    font-size: 1.5rem;
+}
+
+.out_of {
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 12rem;
+    aspect-ratio: 1;
+    font-weight: 700;
+    padding-top: 3rem;
+    margin: 2rem auto;
+    border-radius: 50%;
+}
+
+.overall_score {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.remark {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.overall_score, .remark {
+    color: white;
+}
+
+.info {
+    padding-inline: 1rem;
+}
+
+.right {
+    color: hsl(293, 5%, 65%);
+    flex: 50%;
+    padding: 3rem;
+}
+
+.right_heading {
+    color: hsl(224, 30%, 27%);
+    margin-bottom: 2rem;
+}
+
+.stats {
+    display: flex;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+#stats1 {
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+#reaction {
+    color: hsl(0, 100%, 67%);
+}
+#stats2 {
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+#memory {
+    color: hsl(39, 100%, 56%);
+}
+#stats3 {
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+#verbal {
+    color: hsl(166, 100%, 37%);
+}
+#stats4 {
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+#visual {
+    color: hsl(234, 85%, 45%);
+}
+
+.score {
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+    margin-inline: auto 0.5rem;
+}
+
+img {
+    margin-bottom: -5px;
+}
+
+button {
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    outline: none;
+    margin-top: 2rem;
+    border: 0;
+    border-radius: 25px;
+    padding: 1rem;
+    width: 17rem;
+}
+
+@media screen and (max-width: 475px) {
+    body {
+        height: 100%;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .left {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        padding: 1.5rem;
+    }
+
+    .stats {
+        width: 19rem;
+        padding: 1.5rem;
+    }
+}
